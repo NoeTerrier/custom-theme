@@ -1,3 +1,3 @@
-sudo dnf install git
+#!/bin/bash
 
 cp .gitconfig "$HOME/.gitconfig"

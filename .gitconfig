@@ -1,0 +1,31 @@
+[user]
+        email = noeterrier@proton.me
+        name = Noe Terrier
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[pager]
+        branch = false
+[commit]
+        gpgsign = false
+[alias]
+        s = status --short
+        al = add .
+    ap = add --patch
+        c = commit
+        ca = commit --amend
+    cp = cherry-pick
+    ds = diff --staged
+        p = push
+    glog = log --graph --decorate --oneline --all
+    dc = "!f() { git diff $1~ $1; }; f"
+[pull]
+        ff = only
+[init]
+        defaultBranch = main
+[http]
+        cookiefile = /Users/noe/.gitcookies
+[core]
+        editor = nvim
